@@ -18,65 +18,28 @@
                 }
                 
                 else {
+                    $databaseConnection = mysqli_connect("localhost", "root", "", "quizzes") or die("Error connecting to database.");
                     
+                    foreach($_POST as $key => $val) {
+                        $query = "INSERT INTO lhtlquizsubmitted(id, answer) VALUES ('0', '$val')";
+                        mysqli_query($databaseConnection, $query);
+                        //echo $key . " " . $val . "<br>";
+                    } 
                     
-
-                    if(isset($_POST['answer1'])) {
-                        echo $_POST['answer1']; 
-                        echo "<br>";
-                    }
-                    
-
-                    if(isset($_POST['answer2'])) {
-                        echo $_POST['answer2'];
-                        echo "<br>";
-                    }
-
-                    if(isset($_POST['answer3'])) {
-                        echo $_POST['answer3'];
-                        echo "<br>";
-                    }
-
-                    if(isset($_POST['answer4'])) {
-                        echo $_POST['answer4'];
-                        echo "<br>";
-                    }
-
-                    if(isset($_POST['answer5'])) {
-                        echo $_POST['answer5'];
-                        echo "<br>";
-                    }
-
-
-                    if(isset($_POST['answer6'])) {
-                        echo $_POST['answer6'];
-                        echo "<br>";
-                    }
-
-
-                    if(isset($_POST['answer7'])) {
-                        echo $_POST['answer7'];
-                        echo "<br>";
-                    }
-
-
-                    if(isset($_POST['answer8'])) {
-                        echo $_POST['answer8'];
-                        echo "<br>";
-                    }
-
-
-                    if(isset($_POST['answer9'])) {
-                        echo $_POST['answer9'];
-                        echo "<br>";
-                    }
-
-
-                    if(isset($_POST['answer10'])) {
-                        echo $_POST['answer10'];
-                        echo "<br>";
-                    }
+                    ?>
+        
+                <h2>Thank you for your submission here are your results!</h2>
+        <?php
+        
                 }
+                // Code to count results and send grade back to user
+                    
+                    
+                // Delete results from lhtlquizsubmitted table
+                $deleteResultsFromTable = "DELETE * FROM lhtlquizsubmitted";
+                mysqli_query($databaseConnection, $deleteResultsFromTable);
+                    
+                mysqli_close($databaseConnection);
             }
 
         ?>
