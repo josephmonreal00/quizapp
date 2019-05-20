@@ -3,6 +3,7 @@
     <head>
         <title>Learning How To Learn Quiz!</title>
         <meta charset="utf-8">
+        <link href="styles/stylequiz.css" type="text/css" rel="stylesheet">
     </head>
     
     <body>
@@ -149,7 +150,7 @@
                     echo "<h3>" . $row['question'] . "</h3>";
                     
                     // Querying the table with the options for question 2
-                    $querySet4 = "SELECT options FROM lhtloptionsset4";
+                    $querySet4 = "SELECT options FROM lhtloptionsset5";
                     
                     // Retrieving the resource id 
                     $resourseID4q4set = mysqli_query($dbc,$querySet4) or die("Error querying the table: 'lhtloptionsset4'.");
@@ -181,7 +182,7 @@
                     echo "<h3>" . $row['question'] . "</h3>";
                     
                     // Querying the table with the options for question 2
-                    $querySet5 = "SELECT options FROM lhtloptionsset5";
+                    $querySet5 = "SELECT options FROM lhtloptionsset6";
                     
                     // Retrieving the resource id 
                     $resourseID4q5set = mysqli_query($dbc,$querySet5) or die("Error querying the table: 'lhtloptionsset5'.");
@@ -213,7 +214,7 @@
                     echo "<h3>" . $row['question'] . "</h3>";
                     
                     // Querying the table with the options for question 2
-                    $querySet6 = "SELECT options FROM lhtloptionsset6";
+                    $querySet6 = "SELECT options FROM lhtloptionsset7";
                     
                     // Retrieving the resource id 
                     $resourseID4q6set = mysqli_query($dbc,$querySet6) or die("Error querying the table: 'lhtloptionsset6'.");
@@ -245,7 +246,7 @@
                     echo "<h3>" . $row['question'] . "</h3>";
                     
                     // Querying the table with the options for question 2
-                    $querySet7 = "SELECT options FROM lhtloptionsset7";
+                    $querySet7 = "SELECT options FROM lhtloptionsset8";
                     
                     // Retrieving the resource id 
                     $resourseID4q7set = mysqli_query($dbc,$querySet7) or die("Error querying the table: 'lhtloptionsset7'.");
@@ -277,7 +278,7 @@
                     echo "<h3>" . $row['question'] . "</h3>";
                     
                     // Querying the table with the options for question 2
-                    $querySet8 = "SELECT options FROM lhtloptionsset8";
+                    $querySet8 = "SELECT options FROM lhtloptionsset9";
                     
                     // Retrieving the resource id 
                     $resourseID4q8set = mysqli_query($dbc,$querySet8) or die("Error querying the table: 'lhtloptionsset8'.");
@@ -309,7 +310,7 @@
                     echo "<h3>" . $row['question'] . "</h3>";
                     
                     // Querying the table with the options for question 2
-                    $querySet9 = "SELECT options FROM lhtloptionsset9";
+                    $querySet9 = "SELECT options FROM lhtloptionsset10";
                     
                     // Retrieving the resource id 
                     $resourseID4q9set = mysqli_query($dbc,$querySet9) or die("Error querying the table: 'lhtloptionsset9'.");
@@ -341,7 +342,7 @@
                     echo "<h3>" . $row['question'] . "</h3>";
                     
                     // Querying the table with the options for question 2
-                    $querySet10 = "SELECT options FROM lhtloptionsset10";
+                    $querySet10 = "SELECT options FROM lhtloptionsset4";
                     
                     // Retrieving the resource id 
                     $resourseID4q10set = mysqli_query($dbc,$querySet10) or die("Error querying the table: 'lhtloptionsset10'.");
@@ -365,8 +366,9 @@
         <?php
             } // Ending of main while......... While loop the iterates through all the rows
         ?>
-                        
+                <br>
                 <button name="submit">Submit</button>
+                        <br>
                         
         <?php
                         

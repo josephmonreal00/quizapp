@@ -3,15 +3,16 @@
     <head>
         <title>Quiz You!</title>
         <meta charset="utf-8">
+        <link href="styles/index.css" type="text/css" rel="stylesheet">
     </head>
     
     <body>
-        <h1>Select Quiz To Take!</h1>
-        <br><br><a href="lhtlquiz.php">Learn How 2 Learn Quiz</a>
-        <br><br><a href="javaquiz.php">Java Quiz!</a>
-        <br><br><a href="phpquiz.php">PHP Quiz!</a>
-        <br><br><a href="mysqlquiz.php">MySQL Quiz!</a>
-        <br><br><a href="earth.php">Earth Quiz!</a>
-        <br><br><a href="espanol.php">Espanol Quiz!</a>
+        <div class="container">
+            <h1 id="title" class="item0">Select Quiz To Take</h1>
+            <a href="javaquiz.php"  class="item1">Java Quiz</a>
+            <a href="phpquiz.php"   class="item2">PHP Quiz</a>
+            <a href="mysqlquiz.php" class="item3">MySQL Quiz</a>
+            <a href="lhtlquiz.php"  class="item4">Learn How To Learn Quiz</a>
+        </div>
     </body>    
 </html>

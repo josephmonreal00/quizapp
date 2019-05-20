@@ -1,0 +1,17 @@
+body {
+    font-family: monospace;
+    padding: 0 0 0 20px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:active {
+    color: black;
+}
+
+a:hover {
+    color: skyblue;
+}

@@ -3,6 +3,7 @@
     <head>
         <title>Quiz Results</title>
         <meta charset="utf-8">
+        <link href="styles/results.css" type="text/css" rel="stylesheet">
     </head>
     
     <body>
@@ -12,7 +13,7 @@
             if(isset($_POST['submit'])) {
                 
                 if(!isset($_POST['answer1']) || !isset($_POST['answer2']) || !isset($_POST['answer3']) || !isset($_POST['answer4']) || !isset($_POST['answer5']) || !isset($_POST['answer6']) || !isset($_POST['answer7']) || !isset($_POST['answer8']) || !isset($_POST['answer9']) || !isset($_POST['answer10'])) {
-                    echo "<h2>You did not submit all information please click the link and finish quiz!</h2>";
+                    echo "<h2>You did not submit all information please click finish quiz link.</h2>";
                     echo "<br>";
                     echo "<a href='javaquiz.php'>Finish Quiz Please!</a>";
                 }
